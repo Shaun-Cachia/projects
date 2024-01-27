@@ -100,6 +100,11 @@ public class Main_Class {
                     found = true;
                     System.out.println("ID found!");
                     pos = i;
+                    if (m.get(pos) instanceof SeniorMember) {
+                        System.out.println("Senior member found!");
+                        System.out.println("Re-input a Junior member!");
+                        found = false;
+                    }
                     break;
                 }
             }
@@ -158,6 +163,11 @@ public class Main_Class {
                     found = true;
                     System.out.println("ID found!");
                     pos = i;
+                    if (m.get(pos) instanceof JuniorMember) {
+                        System.out.println("Junior member found!");
+                        System.out.println("Re-input a senior member!");
+                        found = false;
+                    }
                     break;
                 }
             }
